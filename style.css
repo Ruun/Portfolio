@@ -230,6 +230,10 @@ ul li nav {
         right: 0;
         z-index: 2;
     }
+    section{
+    padding-left: 70PX;
+    margin: 0;
+}
 
     nav ul li {
         display: block;
