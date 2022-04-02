@@ -1,0 +1,253 @@
+.container{
+    display: inline;
+}
+section{
+    padding-left: 90PX;
+    margin: 0;
+}
+
+html {
+    font-size: 16px;
+    margin-top: -3rem;
+    background-color: #444;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #ccc;
+}
+
+.container {
+    width: 80%;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #64ffda;
+}
+
+nav {
+    position: fixed;
+    display: block;
+    width: 60px;
+    height: 100vh;
+    background-color: #333;
+    text-align: center;
+}
+
+nav .brand {
+    font-size: 3rem;
+    font-weight: 600;
+    display: block;
+    background-color: #171717;
+}
+
+nav .menu {
+    display: block;
+    margin-top: 5rem;
+}
+
+nav .menu a {
+    display: block;
+}
+
+nav .menu a,
+nav .social a {
+    color: #999;
+    -webkit-transition: color 320ms ease-in;
+    -moz-transition: color 320ms ease-in;
+    -ms-transition: color 320ms ease-in;
+    -o-transition: color 320ms ease-in;
+    transition: color 320ms ease-in;
+}
+
+nav .menu a:hover,
+nav .menu a.active,
+nav .social a:hover {
+    color: #64ffda;
+}
+
+nav .social {
+    margin-top: 3rem;
+}
+
+nav .social a {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+section {
+    min-height: 100vh;
+}
+
+section:nth-child(odd) {
+    background-color: #373737;
+}
+
+section:nth-child(even) {
+    background-color: #444;
+}
+
+.container h2 {
+    margin-top: 6rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.welcome {
+    padding-top: 60px;
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+.pink {
+    color: #f06292
+}
+
+.blue {
+    color: #64ffda;
+}
+
+#home button {
+    margin-top: 3rem;
+    width: 150px;
+    font-size: 1.3rem;
+    border: 1px solid #64ffda;
+    border-radius: 5px;
+    color: #64ffda;
+    background-color: #444;
+    -webkit-transition: background 320ms ease-in;
+    -moz-transition: background 320ms ease-in;
+    -ms-transition: background 320ms ease-in;
+    -o-transition: background 320ms ease-in;
+    transition: background 320ms ease-in;
+}
+
+#home button:hover {
+    background-color: #64ffda;
+    color: #444;
+}
+
+.text-container {
+    width: 50%;
+    text-align: justify;
+}
+
+#about .text-container {
+    float: right;
+}
+
+.text-container p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+#works h2 {
+    margin-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.img-thumbnail {
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 2px;
+}
+
+.form-container {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -1rem;
+}
+
+form {
+    margin-top: 3rem;
+}
+
+.form-container input,
+.form-container textarea,
+.form-container button {
+    margin: 0 auto;
+    display: block;
+}
+
+input,
+textarea {
+    width: 70%;
+    border: none;
+    border-radius: 5px;
+    padding: .7rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #fff;
+}
+
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+form button {
+    margin-top: 3rem;
+    width: 150px;
+    height: 2rem;
+    font-size: 1rem;
+    border: 1px solid #f06292;
+    border-radius: 5px;
+    color: #f06292;
+    background-color: #444;
+    -webkit-transition: background 320ms ease-in;
+    -moz-transition: background 320ms ease-in;
+    -ms-transition: background 320ms ease-in;
+    -o-transition: background 320ms ease-in;
+    transition: background 320ms ease-in;
+}
+
+form button:hover {
+    background-color: #f06292;
+    color: #444;
+}
+
+ul li nav {
+    text-decoration: none;
+}
+.menu-icon {
+    width: 35px;
+    cursor: pointer;
+    display: none;
+    float: right;
+}
+@media only screen and (max-width: 700px) {
+    nav ul {
+        width: 100%;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+    *{
+        overflow: scroll;
+    }
+}
+nav {
+    flex: 1;
+}
