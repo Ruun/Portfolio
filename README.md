@@ -1,2 +1,2 @@
-# Portfolio-
-my portfolio
+# Portfolio
+my portfolio. Not responsive
