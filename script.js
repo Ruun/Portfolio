@@ -1,46 +1,55 @@
-$(function () {
-    $('.scroll-page').on('click', function () {
-        var offset = 0;
-        var speed = 800;
-        var target = $(this.hash);
+/*let a = 2;
+let b = 4;
+console.log(a+b);
+alert(`a + b is  ${a+b}`);
+confirm("a+b?");
+if(a + b === 0){
+    alert("a+b is 6");
+}else{
+    alert("a + b is not 6");
+    console.log("a+b");
+}*/
+//code by Ruan
+const body = document.querySelector("body"),
+      nav = document.querySelector("nav"),
+      modeToggle = document.querySelector(".dark-light"),
+      searchToggle = document.querySelector(".searchToggle"),
+      sidebarOpen = document.querySelector(".sidebarOpen"),
+      siderbarClose = document.querySelector(".siderbarClose");
 
-        $('nav .menu a').each(function () {
-            $(this).removeClass('active');
-        });
+      let getMode = localStorage.getItem("mode");
+          if(getMode && getMode === "dark-mode"){
+            body.classList.add("dark");
+          }
 
-        $(this).addClass('active');
+// js code to toggle dark and light mode
+      modeToggle.addEventListener("click" , () =>{
+        modeToggle.classList.toggle("active");
+        body.classList.toggle("dark");
 
-        $('html, body').animate({
-            scrollTop: target.offset().top - offset
-        }, speed, 'swing');
-    });
-
-});
-
-$(window).scroll(function (event) {
-    var scrollPos = $(document).scrollTop();
-    console.log(scrollPos);
-    $('nav .menu a').each(function () {
-        var curLink = $(this);
-        var refElement = $(curLink.attr('href'));
-
-        if (refElement.position().top <= scrollPos + 60) {
-            $('nav .menu a').removeClass('active');
-            curLink.addClass('active');
-
-        } else {
-            curLink.removeClass('active');
+        // js code to keep user selected mode even page refresh or file reopen
+        if(!body.classList.contains("dark")){
+            localStorage.setItem("mode" , "light-mode");
+        }else{
+            localStorage.setItem("mode" , "dark-mode");
         }
-    });
+      });
+
+// js code to toggle search box
+        searchToggle.addEventListener("click" , () =>{
+        searchToggle.classList.toggle("active");
+      });
+ 
+      
+//   js code to toggle sidebar
+sidebarOpen.addEventListener("click" , () =>{
+    nav.classList.add("active");
 });
 
-var menulist = document.getElementById("menulist");
-menulist.style.maxHeight = "0px";
-function togglemenu(){
-    if (menulist.style.maxHeight == "0px") {
-        menulist.style.maxHeight = "130px";
+body.addEventListener("click" , e =>{
+    let clickedElm = e.target;
+
+    if(!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")){
+        nav.classList.remove("active");
     }
-    else {
-        menulist.style.maxHeight = "0px";
-    }
-};
+});
