@@ -14,8 +14,8 @@
         <meta name="description" content="ruan portfolio, my projects, works, experience and...">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="stylee.css">
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+       <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
     </head>
 
     <body>
@@ -34,10 +34,10 @@
     
                     <ul class="nav-links" id="myMenu"> 
                         <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen"><li><a href="#Home"> Home </a></li></button>
-                        <button class="tablink" onclick="openPage('About', this, 'orange')"><li><a href="#About"> About </a></li></button>
+                        <button class="tablink" onclick="openPage('About', this, 'white')"><li><a href="#About"> About </a></li></button>
                         <button class="tablink" onclick="openPage('project', this, 'orange')"><li><a href="#project"> Projects </a></li></button>
-                        <button class="tablink" onclick="openPage('Service', this, 'orange')"><li><a href="#service"> Service </a></li></button>
-                        <button class="tablink" onclick="openPage('Contact', this, 'orange')"><li><a href="#contact"> Contact </a></li></button>
+                        <button class="tablink" onclick="openPage('Service', this, 'green')"><li><a href="#service"> Service </a></li></button>
+                        <button class="tablink" onclick="openPage('Contact', this, 'yellow')"><li><a href="#contact"> Contact </a></li></button>
                         <li> <a href="https://twitter.com/TEAMCAMEROUN" target="_blank"><img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fsocialbarrel.com%2Fwp-content%2Fuploads%2F2018%2F12%2FTwitter.png&f=1&nofb=1" alt="twitter logo" height="20px"> </a></li>
 
                         <li> <a href="https://github.com/thisRuan" target="_blank"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Flogos-world.net%2Fwp-content%2Fuploads%2F2020%2F11%2FGitHub-Symbol.png&f=1&nofb=1" alt="github logo" height="30px"> </a></li>
@@ -71,15 +71,34 @@
      <div id="Home" class="tabcontent">
 
         <div class="homr">
-        <div class="container">
+         <div class="container">
             <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Faccufigures.com%2Fwp-content%2Fuploads%2F2017%2F11%2Fclassyposhportfolio.png&f=1&nofb=1" alt="javascript" height="250px" class="code">
             <h1 class="welcome">Hello!<br>My name is Ruan.<br> I am a web<span class="pink">designer</span>
                 &amp; <span class="blue">developer</span>. I design and develop web applications. I am base in <br><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.iconpacks.net%2Ficons%2F2%2Ffree-location-icon-2955-thumb.png&f=1&nofb=1" alt="location" height="30px"> Ottawa, Canada</h1>
-            <a href="#contact"><button class="scroll-page">Contact Me</button></a>
+            <a href="#contact"><button class="scroll-page" onclick="openPage('Contact', this, '')">Contact Me</button></a>
             <br>
-        </div>
-        <hr>
-        
+         </div>
+         <hr>
+         <h3 style="font-size: 45px;">It's all about <br> <span class="pink">determination</span></h3>
+         <div class="blueee">
+           <p class="btext">I'm Ruan S. A student currently in high school and soon to be graduate <br> in Ottawa. I started to be interested in programming when I was <br> 14
+            this was because at that time things like facebookand others where popular so <br> I wanted to find the stories behind them. I stated learning stories about some companies <br> like Facebook, Twitter, Microsoft and Apple. I learned how programming <br> helped them reach their goals.
+           I like to play video games on my free time, read, watch movie, <br> play soccer or basketball and learn something new.</p>
+         </div>
+         <hr>
+         <div>
+           <h3 style="font-size: 45px;">Fun fact <br><span class="pink"> or not</span></h3>
+            <h4 style="font-size: 20px;">I can speak and write in both:</h4>
+           <p class="btext">French - First language <br>
+            English - Second languagee (Expert)</p>
+         </div>
+         <hr>
+         <div>
+           <h3 style="font-size: 45px;">Skill<span class="pink">s</span></h3>
+           <p class="btext">
+             My main area of expertise is front-end development and everything related with this side of web development. <br> I know how to develop with the follow HTML, CSS, JS and boostrap. <br> For now, I am currently learning some of the front-end frameworks, Vue.js,nodejs,threejs and some <br> backend languages like Java, Python and C++ and more...
+          </p>
+         </div>
        </div> 
      </div>
 
@@ -100,7 +119,7 @@
                 <div class="form-container">
                     <h2 class="pink">Get In Touch</h2>
                     <form action="mailto:emilsimo12@gmail.com" method="post" enctype="text/plain">
-                        <input type="text" placeholder="Name"><br>
+                        <input type="text" placeholder="Name" style="color: var(--text-color);"><br>
                         <input type="email" placeholder="Email"><br>
                         <input type="text/subject" placeholder="Subject"><br>
                         <textarea placeholder="Message"></textarea><br>
@@ -122,7 +141,11 @@
 
       <div id="project" class="tabcontent">
         <h3>Projects</h3>
-        <p>Who we are and what we do.</p>
+        <a href="https://thisruan.github.io/instagram/" target="_blank"> <h4 class="pink">Instagram (Full screen) </h4> </a> 
+                        <a href="https://thisruan.github.io/ps5/" target="_blank" rel="noopener noreferrer"> <h4 class="pink">PS5 (Full screen)</h4></a> <br>
+                        <p class="btext">This are some of the projects that I had fun doing. Each of them tought<br> me how to improve my design and I learned how to google correctly <br>  when I needed help on something</p> <br>
+                        <iframe src="https://thisruan.github.io/instagram/" frameborder="3" height="600px" width="650px"></iframe>
+                        <iframe src="https://thisruan.github.io/ps5/" frameborder="0" height="600px" width="600px"></iframe>
       </div>
 
 

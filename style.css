@@ -11,12 +11,13 @@
 
 /* ===== Colours ===== */
 :root{
-    --body-color: #E4E9F7;
-    --nav-color: #4070F4;
+    --body-color: #0B10D4;
+    --nav-color: #2124dd;
     --side-nav: #3156be;
-    --text-color: rgb(0, 0, 0);
+    --text-color: #FFFFFF;
     --search-bar: #F2F2F2;
     --search-text: #010718;
+    --body: #114bec;
 }
 
 body{
@@ -25,11 +26,12 @@ body{
 }
 
 body.dark{
-    --body-color: #18191A;
-    --nav-color: #242526;
-    --side-nav: #242526;
-    --text-color: #CCC;
+    --body-color: #FFFFFF;
+    --nav-color: #F5F5F5;
+    --side-nav: #ffffff;
+    --text-color: #000000;
     --search-bar: #242526;
+    --body: #F5F5F5;
 }
 
 nav{
@@ -239,6 +241,15 @@ body.dark .search-field i{
 }
 
 @media (max-width: 790px) {
+    iframe{
+        height: 520px;
+        width: 330px;
+    }
+    .tabcontent{
+        font-size: small;
+        font-weight: lighter;
+        padding: 10px;
+    }
     nav .nav-bar .sidebarOpen{
         display: block;
     }
@@ -339,8 +350,9 @@ textarea {
     border: none;
     border-radius: 5px;
     padding: .7rem;
-    background-color: rgba(0, 0, 0, 0.3);
-    color: #fff;
+    background-color: #f6ecef;
+    border: 1px solid rgba(0, 0, 0, 0.172);
+    color: var(--text-color);
 }
 
 textarea {
@@ -371,26 +383,32 @@ form button:hover {
 .scroll-page{
     margin-bottom: 3rem;
     margin-top: 3rem;
-    width: 150px;
-    height: 2rem;
+    width: 170px;
+    height: 4rem;
     font-size: 1rem;
-    border: 1px solid #f06292;
+    border: 1px solid #ff0055;
     border-radius: 5px;
     color: #f06292;
-    background-color: #444;
     -webkit-transition: background 320ms ease-in;
     -moz-transition: background 320ms ease-in;
     -ms-transition: background 320ms ease-in;
     -o-transition: background 320ms ease-in;
     transition: background 320ms ease-in;
 }
+.scroll-page:hover{
+    background-color: #f06292;
+    color: #444;
+}
 .blue{
-    color: #3156be;
+    color: #e81818;
 }
 .code{
     float: left;
    margin-right: 2rem;
     
+}
+hr{
+    display: none;
 }
 .homr{
     display: grid;
@@ -410,9 +428,25 @@ div{
     .homr{
         position: absolute;
         padding: 100px;
+        height: 100%;
     }
     .code{
         height: 400px;
         float: left;
     }
+    .container {
+        padding: 100px; 
+    }
+    .btext{
+        padding: 100px;
+    }
+
 }
+.btext{
+    line-height: 2.4rem;
+    overflow-wrap: break-word;
+    padding: 50px;
+    background-color: var(--body);
+    margin-bottom: 45px;
+}
+
