@@ -241,6 +241,14 @@ body.dark .search-field i{
 }
 
 @media (max-width: 790px) {
+    .centered{
+        display: inline;
+        width: 300px;
+    }
+    .work{
+        font-size: 90px;
+        text-align: center;
+    }
     iframe{
         height: 520px;
         width: 330px;
@@ -425,6 +433,10 @@ div{
     display: block;
 }
 @media (min-width: 790px){
+    .work{
+        font-size: 1900%;
+        text-align: center;
+    }
     .homr{
         position: absolute;
         padding: 100px;
@@ -449,4 +461,56 @@ div{
     background-color: var(--body);
     margin-bottom: 45px;
 }
+.insta{
+    /* The image used */
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.techrounder.com%2Fwp-content%2Fuploads%2F2021%2F03%2Finstagram-followers.jpg&f=1&nofb=1');
 
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contro{
+      /* The image used */
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-alpha.figma.com%2Fhub%2Ffile%2F297638120%2Fa5506bad-ff5a-4c66-9d00-828f443f6a1f-cover&f=1&nofb=1');
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+.containes{
+    position: relative;
+  text-align: center;
+}
+.scroll-p{
+    background-color: #F2F2F2;
+    width: 170px;
+    height: 4rem;
+    font-size: 1rem;
+    border: 1px solid #ff0055;
+    border-radius: 5px;
+    color: #f06292;
+    -webkit-transition: background 320ms ease-in;
+    -moz-transition: background 320ms ease-in;
+    -ms-transition: background 320ms ease-in;
+    -o-transition: background 320ms ease-in;
+    transition: background 320ms ease-in;
+}
+.scroll-p:hover{
+    background-color: #f06292;
+    color: #444;
+}
