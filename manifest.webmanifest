@@ -18,7 +18,7 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/?source=thisruan.github.io/Portfolio-/#Home",
+    "start_url": "/?source=/Portfolio-/#Home",
     "background_color": "#3367D6",
     "display": "standalone",
     "scope": "/",
@@ -28,14 +28,14 @@
         "name": "Ruan portfolio",
         "short_name": "Ruan",
         "description": "View weather information for today",
-        "url": "/?source=thisruan.github.io/Portfolio-/#Home",
+        "url": "/?source=/Portfolio-/#Home",
         "icons": [{ "src": "icons-192.png", "sizes": "192x192" }]
       },
       {
         "name": "Ruan portfolio",
         "short_name": "Ruan",
         "description": "View weather information for tomorrow",
-        "url": "/?source=thisruan.github.io/Portfolio-/#Home",
+        "url": "/?source=/Portfolio-/#Home",
         "icons": [{ "src": "icons-192.png", "sizes": "192x192" }]
       }
     ],
