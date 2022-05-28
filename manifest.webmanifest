@@ -3,22 +3,22 @@
     "name": "Ruan | Portfolio",
     "icons": [
       {
-        "src": "/images/icons-512.png",
+        "src": "images/icons-512.png",
         "type": "image/png",
         "sizes": "512x512"
       },
       {
-        "src": "/images/icons-192.png",
+        "src": "images/icons-192.png",
         "type": "image/png",
         "sizes": "192x192"
       },
       {
-        "src": "/images/icons-512.png",
+        "src": "images/icons-512.png",
         "type": "image/png",
         "sizes": "512x512"
       }
     ],
-    "start_url": "/Portfolio-/",
+    "start_url": ".",
     "background_color": "#3367D6",
     "display": "standalone",
     "scope": "/",
@@ -28,26 +28,26 @@
         "name": "Ruan portfolio",
         "short_name": "Ruan",
         "description": "View weather information for today",
-        "url": "/Portfolio-/",
-        "icons": [{ "src": "/images/icons-192.png", "sizes": "192x192" }]
+        "url": ".",
+        "icons": [{ "src": "images/icons-192.png", "sizes": "192x192" }]
       },
       {
         "name": "Ruan portfolio",
         "short_name": "Ruan",
         "description": "View weather information for tomorrow",
-        "url": "/Portfolio-/",
-        "icons": [{ "src": "/images/icons-192.png", "sizes": "192x192" }]
+        "url": ".",
+        "icons": [{ "src": "images/icons-192.png", "sizes": "192x192" }]
       }
     ],
     "description": "Ruan s portfolio",
     "screenshots": [
       {
-        "src": "/images/icon.png",
+        "src": "images/icon.png",
         "type": "image/png",
         "sizes": "540x720"
       },
       {
-        "src": "/images/icon.png",
+        "src": "images/icon.png",
         "type": "image/png",
         "sizes": "540x720"
       }
