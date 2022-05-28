@@ -10,6 +10,16 @@ if(a + b === 0){
     console.log("a+b");
 }*/
 //code by Ruan
+
+
+//adblock may create some errors in the console
+
+window.addEventListener('load', () => {
+    registerSW();
+  });
+
+
+
 const body = document.querySelector("body"),
       nav = document.querySelector("nav"),
       modeToggle = document.querySelector(".dark-light"),
@@ -53,3 +63,13 @@ body.addEventListener("click" , e =>{
         nav.classList.remove("active");
     }
 });
+
+async function registerSW() {
+    if ('serviceWorker' in navigator) {
+      try {
+        await navigator.serviceWorker.register('./sw.js');
+      } catch (e) {
+        console.log(`SW registration failed`);
+      }
+    }
+  }
