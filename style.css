@@ -305,7 +305,7 @@ body.dark .search-field i{
     .nav-links li a{
         display: block;
         margin-top: 20px;
-    }
+    }   
 }
 #home{
     margin-top: 55px;
@@ -335,7 +335,6 @@ button{
 }
 
   .form-container {
-    width: 50%;
     text-align: center;
     margin: 0 auto;
     margin-top: -1rem;
@@ -358,8 +357,8 @@ textarea {
     border: none;
     border-radius: 5px;
     padding: .7rem;
-    background-color: #f6ecef;
-    border: 1px solid rgba(0, 0, 0, 0.172);
+    background-color: #abababe9;
+    border: 1px solid rgb(0, 0, 0);
     color: var(--text-color);
 }
 
@@ -371,7 +370,7 @@ textarea {
 form button {
     margin-top: 3rem;
     width: 150px;
-    height: 2rem;
+    height: 3rem;
     font-size: 1rem;
     border: 1px solid #f06292;
     border-radius: 5px;
@@ -452,6 +451,7 @@ div{
     .btext{
         padding: 100px;
     }
+    
 
 }
 .btext{
