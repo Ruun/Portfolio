@@ -467,6 +467,8 @@ div{
 
   /* Full height */
   height: 100%; 
+  positoion: absolute;
+  width: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -479,6 +481,8 @@ div{
   background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fs3-alpha.figma.com%2Fhub%2Ffile%2F297638120%2Fa5506bad-ff5a-4c66-9d00-828f443f6a1f-cover&f=1&nofb=1');
   /* Full height */
   height: 100%; 
+  positoion: absolute;
+  width: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
