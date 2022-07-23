@@ -324,7 +324,6 @@ body.dark .search-field i {
     background-position: center;
     position: relative;
     overflow-x: hidden;
-    
 }
 
 
@@ -333,7 +332,6 @@ button {
     text-decoration: none;
     background: none;
     border: none;
-
 }
 
 .tabcontent {
@@ -342,8 +340,6 @@ button {
     padding: 60px 20px;
     height: 100%;
 }
-
-
 
 .pink {
     color: #f06292;
