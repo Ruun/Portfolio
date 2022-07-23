@@ -323,6 +323,7 @@ body.dark .search-field i {
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow-x: hidden;
     
 }
 
