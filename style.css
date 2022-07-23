@@ -19,7 +19,7 @@
     --text-color: #FFFFFF;
     --search-bar: rgb(0, 0, 0);
     --search-text: rgb(255, 255, 255);
-    --body: #585c60;
+    --body: #585c6020;
     
 }
 
@@ -34,7 +34,7 @@ body.dark {
     --side-nav: #ffffff;
     --text-color: #000000;
     --search-bar: #7e8185;
-    --body: #F5F5F5;
+    --body: #f5f5f51a;
 }
 
 nav {
