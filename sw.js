@@ -3,7 +3,6 @@ const staticAssets = [
   './',
   './index.html',
   './style.css',
-  './stylee.css',
   './manifest.webmanifest',
   './script.js'
 ];
