@@ -1,16 +1,3 @@
-/*let a = 2;
-let b = 4;
-console.log(a+b);
-alert(`a + b is  ${a+b}`);
-confirm("a+b?");
-if(a + b === 0){
-    alert("a+b is 6");
-}else{
-    alert("a + b is not 6");
-    console.log("a+b");
-}*/
-//code by Ruan
-
 
 //adblock may create some errors in the console
 
@@ -73,3 +60,5 @@ async function registerSW() {
       }
     }
   }
+
+  
